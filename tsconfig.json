@@ -6,7 +6,10 @@
     "strict": true,
     "moduleResolution": "node",
     "module": "CommonJS",
+    "skipLibCheck": true,
     "target": "es6",
     "outDir": "./dist"
-  }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
