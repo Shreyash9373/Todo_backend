@@ -6,7 +6,10 @@ export const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://todo-frontend-beta-jet.vercel.app/",
+    ],
     credentials: true,
   })
 );
